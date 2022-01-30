@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Tajawal:wght@200&display=swap');
+
+*{
+    direction: rtl;
+   
+    font-family: 'Tajawal', sans-serif;
+    --body-color:#ffffff;
+    --text-color:#0000ff;
+}
+header{
+    position: fixed;
+    z-index: 200;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+.bg-light {
+    --bs-bg-opacity: .5;
+}
+.dropdown-menu{
+text-align: right;
+}
+.carousel-caption h1{
+    font-weight: bold;
+    font-size: 45px;
+}
+/* ////////////////form contact */
+.cont_Form{
+
+width: 60%;
+margin:6rem  auto;
+}
