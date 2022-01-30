@@ -25,9 +25,35 @@ text-align: right;
     font-weight: bold;
     font-size: 45px;
 }
+section .row {
+    width: 85%;
+    margin: 2rem auto;
+}
+section h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+}
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+.section3 .row{
+ margin-bottom: 10rem;   
+}
+/* ///////////////////comp/// */
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
 /* ////////////////form contact */
 .cont_Form{
 
-width: 60%;
-margin:6rem  auto;
-}
+    width: 60%;
+    margin:6rem  auto;
+    }
