@@ -6,14 +6,22 @@
     font-family: 'Tajawal', sans-serif;
     --body-color:#ffffff;
     --text-color:#0000ff;
+
 }
 header{
     position: fixed;
+    top: 0;
     z-index: 200;
     padding: 0;
     margin: 0;
     width: 100%;
     color: rgb(255, 255, 255);
+}
+.search_he{
+width: 300px;
+}
+.form-control{
+    border-radius: 1rem;
 }
 .bg-light {
     --bs-bg-opacity: .5;
@@ -39,11 +47,41 @@ section h2{
     text-align: center;
     font-weight: bold;
 }
+.section2 .carousel-inner{
+  width: 60%;
+  margin: 4rem auto;
+}
+.section2 .carousel-inner .carousel-item img{
+    height: 250px;
+    object-fit: cover;
+}
 .section3 .row{
  margin-bottom: 10rem;   
 }
+footer h5{
+    color: var(--text-color);
+}
+/* /////////job */
+.section_job{
+    margin-top: 4rem;
+}
+.text_he{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 201;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 4rem;
+    margin-left: 15%;
+}
 /* ///////////////////comp/// */
-
+.section4{
+    margin-right: 5rem;
+}
 .box {
     position: relative;
     width: 100%;
@@ -57,3 +95,9 @@ section h2{
     width: 60%;
     margin:6rem  auto;
     }
+/* ////////////////////sign in */
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
