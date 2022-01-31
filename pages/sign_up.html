@@ -68,11 +68,16 @@
                 <div class="carousel-item">
                       <img src="c:/xampp/htdocs/week3/compiny/img/head4.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="login container">
+                    <div class="sign container">
                             <div class="row row-80">
                               <div class="col-md-6 mr_sign">
+                                <!-- Sign Up form -->
                                 <form action="" class="Signup">
-                                  <h3 >تسجيل الدخول</h3>
+                                  <h3 > إنشاء حساب</h3>
+                                  <div class="form-group">
+                                      <label for="name">الاسم</label>
+                                    <input type="text" class="form-control" placeholder="الاسم" name="name" required>
+                                  </div>
                                   <div class="form-group">
                                       <label for="email">البريد الاكتروني</label>
                                     <input type="text" class="form-control" placeholder=" البريد الاكتروني" name="email" required>
@@ -81,12 +86,18 @@
                                       <label for="psw">الرقم السري</label>
                                     <input type="password" class="form-control" placeholder="الرقم السري" name="psw" required> 
                                   </div>   
-                                
-                                  <button type="submit" class="btn btn-success">دخول</button>
-                                  <label><input type="checkbox" checked="checked" name="remember"> تذكرني</label>
+                                  <div class="form-group">
+                                    <label for="psw-repeat">تاكيد الرقم السري</label>
+                                    <input type="password" class="form-control" placeholder="تاكيد الرقم السري" name="psw-repeat" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="term-policy"><input type="checkbox"> من خلال إنشاء حساب فإنك توافق على <a href="#">الشروط والخصوصية</a>.</label>
+                                  </div>
+                                  <button type="submit" class="btn btn-success">إنشاء</button>
+                                  <button type="submit" class="btn btn-outline-secondary" ><a href="c:/xampp/htdocs/week3/compiny/pages/information1.html" style="color: white;" > اشترك الان </a></button>
                                   <hr>
                                   <div class="form-group">
-                                    <p class="not-yet">لاتملك حساب! &nbsp; &nbsp;&nbsp;<a href="c:/xampp/htdocs/week3/compiny/pages/sign_up.html">إنشاء حساب</a></p>
+                                    <p class="not-yet">هل لديك حساب؟<a href="c:/xampp/htdocs/week3/compiny/pages/login.html">تسجيل دخول</a></p>
                                   </div>
                                 </form>
                               </div>
