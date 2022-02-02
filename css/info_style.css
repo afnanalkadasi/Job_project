@@ -245,3 +245,12 @@ body {
     background-image: linear-gradient(#eee 1%,white 15%);
     cursor: text;
 }
+.breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/");}
+
+.m_rigth{
+    margin-right: 10rem;
+}

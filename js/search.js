@@ -22,25 +22,25 @@ $('.filter').change(function(){
     
   });
   
-  $('table tbody tr').show(); //intially all rows will be shown
+  $('.job_card .card .card-body ').show(); //intially all rows will be shown
   
   function filter_function(){
-    $('table tbody tr').hide(); //hide all rows
+    $('.job_card .card .card-body ').hide(); //hide all rows
     
     var companyFlag = 0;
     var companyValue = $('#filter-company').val();
-    var contactFlag = 0;
-    var contactValue = $('#filter-contact').val();
+    var cityFlag = 0;
+    var cityValue = $('#filter-city').val();
  
     //setting intial values and flags needed
     
    //traversing each row one by one
-    $('table tr').each(function() {  
+    $('.card .card-body').each(function() {  
     
       if(companyValue == 0){   //if no value then display row
       companyFlag = 1;
       }
-      else if(companyValue == $(this).find('td.company').data('company')){ 
+      else if(companyValue == $(this).find('h5.company').data('company')){ 
         companyFlag = 1;       //if value is same display row
       }
       else{
@@ -48,21 +48,21 @@ $('.filter').change(function(){
       }
       
       
-       if(contactValue == 0){
-      contactFlag = 1;
+       if(cityValue == 0){
+      cityFlag = 1;
       }
-      else if(contactValue == $(this).find('td.contact').data('contact')){
-        contactFlag = 1;
+      else if(cityValue == $(this).find('span.city').data('city')){
+        cityFlag = 1;
       }
       else{
-        contactFlag = 0;
+        cityFlag = 0;
       }
-      
 
-
-     if(companyFlag && contactFlag){
+     if(companyFlag && cityFlag){
        $(this).show();  //displaying row which satisfies all conditions
      }
   
   });   
   }
+  ////////////////slide comp
+  

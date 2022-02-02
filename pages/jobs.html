@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand " href="#">
                    <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                    وظيفتي
                 </a>
@@ -28,23 +28,25 @@
                 </li>
                 <li class="nav-item"><a class="nav-link" href="jobs.html"> الوظائف</a> </li>
                 <li class="nav-item"><a class="nav-link" href="service.html"> خدماتنا</a></li>
-                <li class="nav-item"><a class="nav-link " href="about_as.html"> من نحن</a></li>  
+                <li class="nav-item"><a class="nav-link " href="about_as.html"> من نحن</a></li>
+                <li class="nav-item"><a class="nav-link " href="company.html">شركاتنا</a></li> 
+  
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     حساب المستخدم
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="information1.html">معلومات المستخدم</a></li>
-                    <li><a class="dropdown-item" href="#">خروج</a></li>
+                    <li><a class="dropdown-item" style="color: black;"href="information1.html">معلومات المستخدم</a></li>
+                    <li><a class="dropdown-item" style="color: black;"href="#">خروج</a></li>
                   </ul>
                 </li> 
-                <li class="nav-item"><a class="nav-link " href="contact.html">الاتصال بنا</a></li> 
+                <li class="nav-item"><a class="nav-link " href="city.html">الاتصال بنا</a></li> 
               </ul>
               <button class="btn btn-sm btn-outline-secondary me-auto" type="button"><a href="sign_up.html">إنشاء حساب</a>   </button>           
           <button class="btn btn-sm btn-outline-secondary me-3" type="button"> <a href="login.html">تسجيل الدخول</a> </button>           
 
           <form class="d-flex me-auto search_he">
-            <input class="form-control " type="search" placeholder="بحث" aria-label="Search">
+            <input class="form-control " id="searchbar" onkeyup="search_ele()" type="search" placeholder="بحث" aria-label="Search">
 
           </form>
             </div>
@@ -53,234 +55,193 @@
     </header>
     <main>
         <section class="section1 ">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="../img/head1.png" class="d-block w-100" alt="...">                </div>
-                <div class="carousel-item">
-                  <img src="../img/head3.png" class="d-block  w-100" alt="...">
+            <div class=" text-secondary px-4 py-5 text-center" style="background-color:#272162; opacity: .9;">
+                <div class="py-5">
+                  <h1 class="display-5 py-5 fw-bold text-white">وظائفنا</h1>
+                  
+                  </div>
                 </div>
-                <div class="carousel-item">
-                      <img src="../img/head4.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="text_he">
-                        <h1 class="display-5 fw-bold ">الوظائف</h1>
-                      </div>
               </div>
-                 
-
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-</section>
-
-       
+          </section>
 <section class="section_job">
-    
-  <select id="filter-company" class="filter">
-      <option value="0">No value</option>
-   <option value="Alfreds">Alfreds</option>
-   <option value="Centro">Centro</option>
-   <option value="Ernst">Ernst</option>
-   <option value="Island">Island</option>
-       <option value="Laughing">Laughing</option>
-       <option value="Magazzini">Magazzini</option>
- </select> 
-   
-     <select id="filter-contact" class="filter">
-      <option value="0">No value</option>
-   <option value="Maria Anders">Maria Anders</option>
-   <option value="Francisco Chang">Francisco Chang</option>
-   <option value="Roland Mendel">Roland Mendel</option>
- </select>  
-   
- <table>
-   <thead>
-   <tr>
-     <th>Company</th>
-     <th>Contact</th>
-    
-   </tr>
-   </thead>
-   <tr>
-     <tbody>
-     <td class="company" data-company="Alfreds">Alfreds</td>
-       
-      <!-- Data attributes helps in fetching values but you can fetch value of text in td also --> 
-       
-     <td class="contact" data-contact="Maria Anders">Maria Anders</td>
-  
-        <!-- here Data attributes are necessary as we need separate min max values --> 
-  
-   </tr>
-   <tr>
-     <td class="company"  data-company="Centro">Centro</td>
-     <td class="contact" data-contact="Francisco Chang">Francisco Chang</td>
+  <div class="row row-cols-md-6 row-80 ">
+              <select id="filter-company " class="filter mb-2">
+                  <option value="0">...</option>
+              <option value="Yemen"> يمن موبايل</option>
+              <option value="hail">هائل سعيد</option>
+              <option value="online">    أون لاين</option>
+            </select> 
 
-   </tr>
-   <tr>
-     <td class="company" data-company="Alfreds" >Alfreds</td>
-     <td class="contact" data-contact="Roland Mendel">Roland Mendel</td>
-     
-   </tr>
-   <tr>
-     <td class="company"  data-company="Centro" >Centro</td>
-     <td class="contact" data-contact="Helen Bennett">Helen Bennett</td>
-   </tr>
-   <tr>
-     <td class="company"  data-company="Laughing">Laughing</td>
-     <td class="contact" data-contact="Yoshi Tannamuri">Yoshi Tannamuri</td>
-   </tr>
-   <tr>
-     <td class="company"  data-company="Laughing">Laughing</td>
-     <td data-contact="Giovanni Rovelli">Giovanni Rovelli</td>
-   </tr>
-   </tbody>
- </table>
- 
-<hr>
-            <div class="row row-cols-md-2 g-4 row-80">
-                <div class="col job_card" >
-                  <div class="card h-100 ">
-                      <div class="card-body">
-                        <h5 class="card-title  ">
-                         <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                         شركة يمن موبايل</h5>
-                            <p class="card-text">مستشفى الحكمة يعلن وظيفة إدارية شاغرة في مجال الأجور والرواتب</p>
-  
-                        <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
-                            <span>صنعاء</span>
-                        </span>
-                        <br>
-                        <div class="row modal-footer " style="border:none; ">
-                         <a href="#" style="text-decoration: none;">
-                          <button class="btn btn-outline-primary btn-small btn-block  mx-auto">
-                              معلومات اكثر </button></a>
-                           </div>                  
-                        </div>
-                    </div>
-                  </div>
+            <select id="" class="filter mb-2">
+                <option value="0">...</option>
+            <option value="Yemen"> يمن موبايل</option>
+            <option value="hail">هائل سعيد</option>
+            <option value="online">    أون لاين</option>
+          </select> 
 
-                <div class="col job_card">
-                  <div class="card h-100 ">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                       <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                          شركة هائل سعيد</h5>
-                      <p class="card-text"> مطلوب محاسب عام</p>
+                <select id="filter-city" class="filter mb-2">
+                  <option value="0">... </option>
+              <option value="Sana">صنعاء </option>
+              <option value="alhwdeda"> الحديدة</option>
+              <option value="all">جميع المدن </option>
+            </select>  
+    </div>
+    <div class="row row-cols-md-2 g-4 row-80">
+        <div class="col job_card" >
+          <div class="card h-100 ">
+              <div class="card-body">
+                <h5 class="card-title  company"  data-company="Yemen">
+                 <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                 شركة يمن موبايل</h5>
+                    <p class="card-text">مستشفى الحكمة يعلن وظيفة إدارية شاغرة في مجال الأجور والرواتب</p>
 
-                      <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
-                          <span>الحديدة</span>
-                      </span>
-                      <br>
-                      <div class="row modal-footer " style="border:none; ">
-                       <a href="#" style="text-decoration: none;">
-                        <button class="btn btn-outline-primary btn-small btn-block  mx-auto">
-                            معلومات اكثر </button></a>
-                         </div>                  
-                      </div>
-                  </div>
+                <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
+                    <span class="city" data-city="Sana">صنعاء</span>
+                </span>
+                <br>
+                <a><i class="far fa-calendar-times" style="width:20px;" aria-hidden="true"></i>
+                  <a > تاريخ الانتهاء : 2022-01-16
+                  </a>
+                  </a>
+                <br>
+                <div class="row modal-footer " style="border:none; ">
+                 <a href="details_job.html" style="text-decoration: none;">
+                  <button class="btn btn-colo-b btn-small btn-block  mx-auto">
+                      معلومات اكثر </button></a>
+                   </div>                  
                 </div>
-         <div class="col job_card" >
-                      <div class="card h-100 ">
-                          <div class="card-body">
-                            <h5 class="card-title">
-                             <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                             أون لاين</h5>
-                                <p class="card-text"> نيوم تعلن وظائف متنوعة للجنسين حملة الثانوية فأعلى برواتب تصل إلى 9000                  </p>
+            </div>
+          </div>
 
-      
-                            <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
-                                <span>جميع المدن</span>
-                            </span>
-                            <br>
-                            <div class="row modal-footer " style="border:none; ">
-                             <a href="#" style="text-decoration: none;">
-                              <button class="btn btn-outline-primary btn-small btn-block  mx-auto">
-                                  معلومات اكثر </button></a>
-                               </div>                  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col job_card" >
-                        <div class="card h-100 ">
-                            <div class="card-body">
-                              <h5 class="card-title">
-                               <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                               شركة يمن موبايل</h5>
-                                  <p class="card-text">مستشفى الحكمة يعلن وظيفة إدارية شاغرة في مجال الأجور والرواتب</p>
-        
-                              <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
-                                  <span>صنعاء</span>
-                              </span>
-                              <br>
-                              <div class="row modal-footer " style="border:none; ">
-                               <a href="#" style="text-decoration: none;">
-                                <button class="btn btn-outline-primary btn-small btn-block  mx-auto">
-                                    معلومات اكثر </button></a>
-                                 </div>                  
-                              </div>
-                          </div>
-                        </div>
-      
-                      <div class="col job_card">
-                        <div class="card h-100 ">
-                          <div class="card-body">
-                            <h5 class="card-title">
-                             <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                                شركة هائل سعيد</h5>
-                            <p class="card-text"> مطلوب محاسب عام</p>
-      
-                            <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
-                                <span>الحديدة</span>
-                            </span>
-                            <br>
-                            <div class="row modal-footer " style="border:none; ">
-                             <a href="#" style="text-decoration: none;">
-                              <button class="btn btn-outline-primary btn-small btn-block  mx-auto">
-                                  معلومات اكثر </button></a>
-                               </div>                  
-                            </div>
-                        </div>
-                      </div>
-               <div class="col job_card" >
-                            <div class="card h-100 ">
-                                <div class="card-body">
-                                  <h5 class="card-title">
-                                   <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                                   أون لاين</h5>
-                                      <p class="card-text"> نيوم تعلن وظائف متنوعة للجنسين حملة الثانوية فأعلى برواتب تصل إلى 9000                  </p>
-      
-            
-                                  <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
-                                      <span>جميع المدن</span>
-                                  </span>
-                                  <br>
-                                  <div class="row modal-footer " style="border:none; ">
-                                   <a href="#" style="text-decoration: none;">
-                                    <button class="btn btn-outline-primary btn-small btn-block  mx-auto">
-                                        معلومات اكثر </button></a>
-                                     </div>                  
-                                  </div>
-                              </div>
-                          </div>
+        <div class="col job_card">
+          <div class="card h-100 ">
+            <div class="card-body">
+              <h5 class="card-title company"  data-company="hail">
+               <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  شركة هائل سعيد</h5>
+              <p class="card-text"> مطلوب محاسب عام</p>
+
+              <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
+                  <span class="city" data-city="alhwdeda">الحديدة</span>
+              </span>
+              <br>
+              <a><i class="far fa-calendar-times" style="width:20px;" aria-hidden="true"></i>
+                <a > تاريخ الانتهاء : 2022-01-16
+                </a>
+                </a>             
+              <div class="row modal-footer " style="border:none; ">
+               <a href="details_job.html" style="text-decoration: none;">
+                <button class="btn btn-colo-b btn-small btn-block  mx-auto">
+                    معلومات اكثر </button></a>
+                 </div>                  
               </div>
-        </section>
+          </div>
+        </div>
+ <div class="col job_card" >
+              <div class="card h-100 ">
+                  <div class="card-body">
+                    <h5 class="card-title company"  data-company="online">
+                     <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                     أون لاين</h5>
+                   <p class="card-text"> نيوم تعلن وظائف متنوعة للجنسين حملة الثانوية فأعلى برواتب تصل إلى 9000     </p>
+                    <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
+                        <span class="city" data-city="all">جميع المدن</span>
+                    </span>
+                    <br>
+                   
+                    <a><i class="far fa-calendar-times" style="width:20px;" aria-hidden="true"></i>
+                      <a > تاريخ الانتهاء : 2022-01-16
+                      </a>
+                      </a>
+                    <div class="row modal-footer " style="border:none; ">
+                     <a href="details_job.html" style="text-decoration: none;">
+                      <button class="btn btn-colo-b btn-small btn-block  mx-auto">
+                          معلومات اكثر </button></a>
+                       </div>                  
+                    </div>
+                </div>
+     </div>
+  
+
+   
+<div class="col job_card" >
+          <div class="card h-100 ">
+              <div class="card-body">
+                <h5 class="card-title company"  data-company="online">
+                 <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                 أون لاين</h5>
+               <p class="card-text"> نيوم تعلن وظائف متنوعة للجنسين حملة الثانوية فأعلى برواتب تصل إلى 9000     </p>
+                <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
+                    <span class="city" data-city="all">جميع المدن</span>
+                </span>
+                <br>
+                <a><i class="far fa-calendar-times" style="width:20px;" aria-hidden="true"></i>
+                  <a > تاريخ الانتهاء : 2022-01-16
+                  </a>
+                  </a>
+                <div class="row modal-footer " style="border:none; ">
+                 <a href="#" style="text-decoration: none;">
+                  <button class="btn btn-colo-b btn-small btn-block  mx-auto">
+                      معلومات اكثر </button></a>
+                   </div>                  
+                </div>
+            </div>
+ </div>
+ <div class="col job_card">
+  <div class="card h-100 ">
+    <div class="card-body">
+      <h5 class="card-title company"  data-company="hail">
+       <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          شركة هائل سعيد</h5>
+      <p class="card-text"> مطلوب محاسب عام</p>
+
+      <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
+        <span class="city" data-city="all">جميع المدن</span>
+    </span>
+    <br>
+    <a><i class="far fa-calendar-times" style="width:20px;" aria-hidden="true"></i>
+      <a > تاريخ الانتهاء : 2022-01-16
+      </a>
+      </a>
+      <div class="row modal-footer " style="border:none; ">
+       <a href="details_job.html" style="text-decoration: none;">
+        <button class="btn btn-colo-b btn-small btn-block  mx-auto">
+            معلومات اكثر </button></a>
+         </div>                  
+      </div>
+  </div>
+</div>
+<div class="col job_card">
+  <div class="card h-100 ">
+    <div class="card-body">
+      <h5 class="card-title company"  data-company="hail">
+       <img src="../img/log.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          شركة هائل سعيد</h5>
+      <p class="card-text"> مطلوب محاسب عام</p>
+
+      <span><i class="fa fa-map-marker" style="width:20px;" aria-hidden="true"></i>
+        <span class="city" data-city="Sana">صنعاء</span>
+    </span>
+    <br>
+    <a><i class="far fa-calendar-times" style="width:20px;" aria-hidden="true"></i>
+      <a > تاريخ الانتهاء : 2022-01-16
+      </a>
+      </a>
+      <div class="row modal-footer " style="border:none; ">
+       <a href="details_job.html" style="text-decoration: none;">
+        <button class="btn btn-colo-b btn-small btn-block  mx-auto">
+            معلومات اكثر </button></a>
+         </div>                  
+      </div>
+  </div>
+</div>
+
+</div>
+</section>
     </main>
-    <div class="container ">
+    <div class="container  ">
         <footer class="py-5  my-5 border-top">
-                
+
           <div class="row">
             <div class="col-2 me-3">
               <h5>الروابط السريعة</h5>
@@ -304,7 +265,7 @@
               </ul>
             </div>
       
-            <div class="col-2 me-3">
+            <div class="col-3 me-3">
               <h5>الوظائف حسب المدينة</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">وظائف تعز</a></li>
@@ -315,7 +276,7 @@
               </ul>
             </div>
             
-            <div class="col-4 offset-1 mb-3 ">
+            <div class="col-3  mb-3 ">
                     <div class="col">
                             <a href="" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
                               <img  src="../img/log.png"  class="bi me-2" width="40" height="32"> 
@@ -328,6 +289,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="c:/xampp/htdocs/week3/compiny/js/search.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 </html>
