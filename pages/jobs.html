@@ -36,11 +36,15 @@
                     حساب المستخدم
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" style="color: black;"href="information1.html">معلومات المستخدم</a></li>
-                    <li><a class="dropdown-item" style="color: black;"href="#">خروج</a></li>
-                  </ul>
+                      <li><a class="dropdown-item" style="color: black;" href="pages/information1.html">معلومات المستخدم</a></li>
+                      <li><a class="dropdown-item" style="color: black;" href="pages/other_users.html"> مستخدمين اخرين</a></li>
+                      <li><a class="dropdown-item" style="color: black;" href="#">خروج</a></li>
+                    </ul>
                 </li> 
                 <li class="nav-item"><a class="nav-link " href="contact.html">الاتصال بنا</a></li> 
+                <li class="nav_item"  id="en"  ><a href="#"class="nav-link "  >English</a></li>
+                <li class="nav_item" onclick="togglestyle()" id="ar"  style="display: none;"><a href="#"class="nav-link " >عربي</a></li>
+            
               </ul>
               <button class="btn btn-sm btn-outline-secondary me-auto" type="button"><a href="sign_up.html">إنشاء حساب</a>   </button>           
           <button class="btn btn-sm btn-outline-secondary me-3" type="button"> <a href="login.html">تسجيل الدخول</a> </button>           
@@ -64,27 +68,22 @@
               </div>
           </section>
 <section class="section_job">
-  <div class="row row-cols-md-6 row-80 ">
-              <select id="filter-company " class="filter mb-2">
-                  <option value="0">...</option>
-              <option value="Yemen"> يمن موبايل</option>
-              <option value="hail">هائل سعيد</option>
-              <option value="online">    أون لاين</option>
-            </select> 
+  <div class=" row-cols-md-6 row-80 ">
+                
+      <select id="filter-company" class="filter  p-2  me-4 mb-2">
+          <option value="0">...</option>
+          <option value="Yemen"> يمن موبايل</option>
+          <option value="hail">هائل سعيد</option>
+          <option value="online">    أون لاين</option>
+    </select> 
 
-            <select id="" class="filter mb-2">
-                <option value="0">...</option>
-            <option value="Yemen"> يمن موبايل</option>
-            <option value="hail">هائل سعيد</option>
-            <option value="online">    أون لاين</option>
-          </select> 
-
-                <select id="filter-city" class="filter mb-2">
-                  <option value="0">... </option>
-              <option value="Sana">صنعاء </option>
-              <option value="alhwdeda"> الحديدة</option>
-              <option value="all">جميع المدن </option>
-            </select>  
+    <select id="filter-city" class="filter p-2 me-4 mb-2">
+        <option value="0">... </option>
+    <option value="Sana">صنعاء </option>
+    <option value="alhwdeda"> الحديدة</option>
+    <option value="all">جميع المدن </option>
+  </select>  
+    
     </div>
     <div class="row row-cols-md-2 g-4 row-80">
         <div class="col job_card" >
@@ -137,7 +136,7 @@
               </div>
           </div>
         </div>
- <div class="col job_card" >
+            <div class="col job_card" >
               <div class="card h-100 ">
                   <div class="card-body">
                     <h5 class="card-title company"  data-company="online">
@@ -163,7 +162,7 @@
      </div>
   
 
-   
+
 <div class="col job_card" >
           <div class="card h-100 ">
               <div class="card-body">
@@ -234,7 +233,7 @@
          </div>                  
       </div>
   </div>
-</div>
+</div> 
 
 </div>
 </section>

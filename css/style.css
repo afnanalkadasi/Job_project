@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Tajawal:wght@200&display=swap');
 
 *{
     direction: rtl;
    
-    font-family: 'Tajawal', sans-serif;
+    font-family:'Times New Roman', Times, serif;
     --body-color:#ffffff;
     --text-color:#272162;
 
@@ -718,18 +717,7 @@ h {
 .section4{
     margin-right: 5rem;
 }
-.box {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px
-}
-.filter{
-    margin: 0 1rem;
-    padding: 8px;
-    color: var(--text-color);
-    border-radius: 5px;
-}
+
 /* ////////////////form contact */
 .cont_Form{
 
@@ -877,4 +865,59 @@ h {
 .services .serv hr {
     width: 30px;
     border-top: 3px solid rgb(0 169 211)
+}
+/* ////////////////compeny// */
+
+.container_im .card {
+    max-width: 300px;
+    height: 150px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out
+}
+
+.container_im .card:hover {
+    height: 250px
+}
+
+.container_im .card .imgContainer {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    right: 60px;
+    z-index: 1;
+ 
+}
+
+.container_im .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px
+
+}
+
+.container_im .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out
+}
+
+.container_im .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s
+}
+
+@media (max-width: 330px) {
+    .container_im .card .imgContainer {
+        left: -2px
+    }
 }

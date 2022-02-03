@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Tajawal:wght@200&display=swap');
 *{
     direction: rtl;
    
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     --body-color:#ffffff;
     --text-color:#272162;
 
@@ -10,10 +9,18 @@
 body {
     background-color: #fff
 }
+.container-fluid{
+    padding: 0;
+overflow-x: hidden;
+}
+.container-fluid .col{
+background-color: var(--text-color);
+
+}
 
 .card1 {
     height: 100vh;
-    width: 100%;
+    width: 80%;
     background-color: #272162;
     border: none
 }
@@ -25,9 +32,10 @@ body {
     border: none
 }
 
-.image span {
+div span {
     color: #fff;
-    font-size: 28px
+    font-size: 18px;
+    text-align: center;
 }
 
 .hline {
@@ -245,6 +253,13 @@ body {
     background-image: linear-gradient(#eee 1%,white 15%);
     cursor: text;
 }
+.breadcrumb a{
+    padding-top: 20px;
+    padding-right: 20rem;
+    font-size: 22px;
+    color: var(--body-color);
+    text-decoration: none;
+}
 .breadcrumb-item+.breadcrumb-item::before {
     float: right;
     padding-right: 0.5rem;
@@ -253,4 +268,32 @@ body {
 
 .m_rigth{
     margin-right: 10rem;
+}
+.modal-content {
+    padding: 20px;
+}
+
+
+
+@media (min-width:201px) and (max-width:900px){
+    im_size{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (min-width:250px) and (max-width:500px){
+    .im_size{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.modal-content{
+    background-color: var(--text-color);
+    opacity: .7;
+}
+.modal-content label{
+    color: var(--body-color);
+    font-weight: bold;
 }
